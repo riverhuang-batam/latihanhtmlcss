@@ -79,9 +79,164 @@
 <input type="submit">
 </form>
 
-<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php"> 
+<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php">
+firstname: <br>
+<input type="text" name="firstname" value="john">
+</form>
 
-firstname
+<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php">
+firstname: <br>
+<input type="text" name="firstname" value="john" readonly>
+
+</form>
+
+<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php">
+firstname: <br>
+<input type="text" name="firstname" value="john" disabled>
+</form>
+
+<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php">
+firstname: <br>
+<input type="text" name="firstname" value="john" size="40">
+</form>
+
+<form action="/HTMLSUPPLEMENTARY3/FORM/action_page.php">
+firstname: <br>
+<input type="text" name="firstname" value="john" maxlength="10s">
+
+</form>
+
+<form action="">
+    firstname: <br>
+    <input type="text" name="firstname" value="john">
+    
+</form>
+
+<form action="">
+    firstname: <input type="text" name="name"><br>
+    lastname: <input type="text" name="lname"> <br>
+    email: <input type="email" name="email" autocomplete="off"> <br>
+    <input type="submit">
+</form>
+
+<form action="" novalidate>
+    email: <input type="email" name="username">
+    <input type="submit">
+
+</form>
+
+<form action="">
+    firstname: <input type="text" name="fname" autofocus>
+    <input type="submit">
+</form>
+
+<form action="">
+    
+</form>
+
+
+<form action="" id="form1">
+    firstname: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+lastname: <input type="text" name="lname" form="form1">
+
+<form action="">
+    firstname: <input type="text" name="fname"> <br>
+    lastname: <input type="text" name="lname"> <br>
+    <input type="submit" value="submit"> <br>
+    <input type="submit" value="submit">
+
+</form>
+
+<form action="">
+    firstname: <input type="text" name="firstname"> <br>
+    <input type="submit" value="submit">
+    <input type="submit" formenctype="multipart/form-data" value="Submit as multipart/form-data">
+</form>
+
+
+
+<form action="">
+    firstname: <input type="text" name="firstname"><br>
+    lastname: <input type="text" name="lastname"> <br>
+    <input type="submit" value="submit"><br>
+    <input type="submit" value="submit using post" formmethod="POST">
+</form>
+
+<form action="">
+    email: <input type="email" value="userid"> <br>
+    <input type="submit" value="submit"> <br>
+    <input type="submit" value="submit without validation" formnovalidate>
+</form>
+
+<form action="">
+    firstname: <input type="text" name="fname"><br>
+    lastname: <input type="text" name="lname"> <br>
+    <input type="submit" value="submit"> <br>
+    <input type="submit" formtarget="_blank" value="submit to a new window"> <br>
+
+</form>
+
+<form action="">
+    firstname: <input type="text" name="fname"> <br>
+    lastname: <input type="text" name="lname"> <br>
+    <input type="image" src="/Fireworks.jpg" width="40" height="40">
+    <input type="submit" value="submit">
+</form>
+
+<form action="" method="GET">
+<input list="browsers" name="browsers">
+<datalist id="browsers">
+    <option value="internet explorer">
+    <option value="firefox">
+    <option value="chrome">
+    <option value="opera">
+    <option value="safari">
+</datalist>
+<input type="submit" value="submit">
+</form>
+
+
+<form action="">
+    enter your before date born:
+    <input type="date" name="bday" min="1945-08-17">
+    enter your after date born:
+    <input type="date" name="bday" max="2019-12-20">
+    quantity (between 1 and 5):
+    <input type="number" name="quantity" min="1" max="5">
+    <input type="submit">
+</form>
+
+<form action="">
+    select image:<input type="file" name="img" multiple>
+    <input type="submit">
+</form>
+
+<form action="">
+country code: <input type="text" name="country_code" pattern="[A-Za-z}{10}" title="please submit the country code with only 10 letter">
+<input type="submit" value="submit">
+
+</form>
+<form action="">
+    firstname: <input type="text" name="fname" placeholder="firstname"> <br>
+    lastname: <input type="text" name="lname" placeholder="lastname"><br>
+    <input type="submit" value="submit">
+</form>
+
+<form action="">
+    username: <input type="text " name="username" required>
+    <input type="submit" value="submit">
+</form>
+<form action="">
+    <input type="number" name="points" step="3">
+    <input type="submit">
+</form>
+
+
+
 </body>
 
 </html>

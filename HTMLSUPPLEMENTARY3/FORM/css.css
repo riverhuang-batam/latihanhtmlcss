@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    background-image: url(/Fireworks.jpg);
+    margin-right: 200px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+#para1{
+    color:rgb(187, 184, 184);
+    font-size: 19px;
+}
+p{
+    color: white;
+    font-size: 18px;
+    border-top-style: dotted;
+    border-bottom-style: solid;
+    border-right-style:dotted;
+    border-left-style:solid;
+
+}
+.center{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+p.center{
+    color: white;
+    font-size:30px;
+    text-align:center;
+}
+.large{
+    color: aqua;
+    text-align:center;
+}
+h1, p{
+    text-align: center;
+}
+.bor{
+    border:5px solid red;
+    border-bottom:10px solid blue;
+    border-radius:5px;
+}
