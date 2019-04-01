@@ -135,7 +135,7 @@ function getValue(){
 function myFunction (p1,p2){
     return p1*p2;
 }
-document.getElementById("demo").innerHTML = myFunction(4,3);
+document.getElementById("demo").innerHTML = myFunction(4, 3);
 
 
 var x = myFunction(4,5);
@@ -158,10 +158,10 @@ function myFunction(){
      typeof carName + " " +carName;
 }
 var car= "fiat";
-document.getElementById("demo").innerHTML = car;
+document.getElementById("demo4").innerHTML = car;
 
 var car={type:"Fiat",model:"500", color:"white"}
-document.getElementById("demo").innerHTML = "the car type is" +  car.type;
+document.getElementById("demo5").innerHTML = "the car type is" +  car.type;
 
 var person={
     firstname:"river",
@@ -169,19 +169,34 @@ var person={
     age: 18,
     eyecolor:"black"
 };
-document.getElementById("demo").innerHTML = person.firstname+ "years old.";
-document.getElementById("demo").innerHTML = person.firstname+ " " + person.lastname;
-document.getElementById("demo").innerHTML = person.firstname+ " " + person["lastname"];
+document.getElementById("demo8").innerHTML = person.firstname+ "years old.";
+var person={
+    firstname:"river",
+    lastname: "huang",
+    age:18,
+    eyecolor:"black"
+}
+document.getElementById("demo9").innerHTML = person.firstname+ " " + person.lastname;
+var person = {
+    firstname:"river",
+    lastname:"huang",
+    age:18,
+    eyecolor:"black"
+}
+document.getElementById("demo2").innerHTML = person.firstname+ " " + person["lastname"];
 
 var person ={
     firstname:"river",
     lastname:"huang",
     age: 18,
-    eyecolor: black,
+    eyecolor: "black",
     id: 1831097,
     fullname: function(){
         return this.firstname+ " "+ this.lastname
     }
 };
-document.getElementById("demo").innerHTML = person.fullname();
-document.getElementById("demo").innerHTML = person.fullname;
+document.getElementById("demo6").innerHTML = person.fullname();
+document.getElementById("demo7").innerHTML = person.fullname;
+function displayDate(){
+    document.getElementById("demo10").innerHTML = Date();
+}
