@@ -123,7 +123,8 @@ function myFunction7(){
     document.getElementById("demo24").innerHTML=arr[0]
 }
 
-var str = "hello"
+var str = ("*","**")
+
 var arr = str.split("");
 var text = "";
 var i;
