@@ -203,8 +203,8 @@ var cars = [
     {type:"Volvo", year:"2016"},
     {type:"Saab", year:"2001"},
     {type:"BMW", year:"2010"}
-]
-function myFunction10{
+];
+function myFunction10(){
     cars.sort(function(a,b){
         var x = a.type.toLowerCase();
         var y = b.type.toLowerCase();
@@ -216,7 +216,7 @@ function myFunction10{
 }
 function displaysCars(){
     document.getElementById("demo31").innerHTML =
-    cars[0] + " " + cars[0].year + "<br>"+
-    cars[1] + " " + cars[1].year + "<br>"+
-    cars[2] + " " + cars[2].year;
+    cars[0].type + " " + cars[0].year + "<br>"+
+    cars[1].type + " " + cars[1].year + "<br>"+
+    cars[2].type + " " + cars[2].year;
 }
