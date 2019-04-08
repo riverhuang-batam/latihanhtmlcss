@@ -123,3 +123,100 @@ function myFunction3(){
     fruit.reverse()
     document.getElementById("demo21").innerHTML = fruit;
 }
+
+var points =[423,324,35,35,332];
+document.getElementById("demo22").innerHTML = points;
+function myFunction4(){
+    points.sort(function(a,b){return a-b});
+    document.getElementById("demo22").innerHTML = points;
+
+}
+
+var points = [21,34,465,64,36];
+document.getElementById("demo23").innerHTML = points
+function myFunction5(){
+    points.sort(function(a,b){return b-a})
+    document.getElementById("demo23").innerHTML = point;
+}
+
+var points1 = [40,100,1,5,25,10];
+document.getElementById("demo24").innerHTML = points1;
+
+function myFunction6(){
+    points1.sort();
+    document.getElementById("demo24").innerHTML = points1;
+}
+function myFunction7(){
+    points1.sort(function(a,b){return a-b})
+    document.getElementById("demo24").innerHTML = points1;
+}
+
+var points= [12,32,54,45,36,67]
+document.getElementById("demo25").innerHTML = points;
+
+function myFunction8(){
+    points.sort(function(a,b){return 0.5 - Math.random()})
+    document.getElementById("demo25").innerHTML = points;
+}
+
+var poin = [32,43,5,1,15,3];
+poin.sort(function(a,b){return a-b})
+document.getElementById("demo26").innerHTML = poin[0];
+
+var poin1 = [ 123,234,343,25,235,1];
+poin1.sort(function(a,b){return b-a})
+document.getElementById("demo27").innerHTML = poin1[0]
+
+var point2 = [2,3,53,5,356,6432];
+document.getElementById("demo28").innerHTML = myArrayMax(point2);
+
+function myArrayMax(arr){
+    return Math.max.apply(null, arr);
+}
+
+var point3 = [43,324,43543,5432];
+document.getElementById("demo29").innerHTML = myArrayMin(point3);
+
+function myArrayMin(arr){
+    return Math.min.apply(null,arr);
+}
+
+var car = [
+    {type:"Volvo", year:"2016"},
+    {type:"saab", year:"2001"},
+    {type:"BMW", year:"2010"}
+];
+
+displaysCars();
+function myFunction9(){
+    car.sort(function (a,b){return a.year-b.year});
+    displaysCars();
+}
+function displaysCars(){
+    document.getElementById("demo30").innerHTML =
+    car[0].type + " " + car[0].year +"<br>"+
+    car[1].type + " " + car[1].year +"<br>"+
+    car[2].type + " " + car[2].year +"<br>";
+}
+
+var cars = [
+    {type:"Volvo", year:"2016"},
+    {type:"Saab", year:"2001"},
+    {type:"BMW", year:"2010"}
+]
+function myFunction10{
+    cars.sort(function(a,b){
+        var x = a.type.toLowerCase();
+        var y = b.type.toLowerCase();
+        if ( x<y){return -1;}
+        if (x>y){return 1;}
+        return 0;
+    });
+    displaysCars();
+}
+function displaysCars(){
+    document.getElementById("demo31").innerHTML =
+    cars[0] + " " + cars[0].year + "<br>"+
+    cars[1] + " " + cars[1].year + "<br>"+
+    cars[2] + " " + cars[2].year;
+}
