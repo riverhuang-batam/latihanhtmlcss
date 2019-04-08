@@ -107,3 +107,19 @@ function isArray(myArray){
 
 var fruit =["banana","lemon","apple", "mango"];
 document.getElementById("demo19").innerHTML =fruit instanceof Array;
+
+var fruit = ["banana", "mango", "orange", "apple"]
+
+document.getElementById("demo20").innerHTML = fruit;
+function myFunction2(){
+fruit.sort();
+document.getElementById("demo20").innerHTML = fruit
+}
+
+var fruit = ["banana", "mango", "orange", "apple"];
+document.getElementById("demo21").innerHTML = fruit;
+function myFunction3(){
+    fruit.sort();
+    fruit.reverse()
+    document.getElementById("demo21").innerHTML = fruit;
+}
