@@ -220,3 +220,73 @@ function displaysCars(){
     cars[1].type + " " + cars[1].year + "<br>"+
     cars[2].type + " " + cars[2].year;
 }
+
+var text = "";
+var numbers = [32,343,5,3,234,];
+numbers.forEach(myFunction11);
+document.getElementById("demo32").innerHTML = text;
+
+function myFunction11(value,index,array){
+    text= text+value+"<br>";
+}
+
+var text1 = "";
+var numbers =[23,355,46,64,654];
+numbers.forEach(myFunction12);
+document.getElementById("demo33").innerHTML = text1;
+
+function myFunction12(value){
+    text1 = text1 + value +"<br>"
+}
+
+var numbers1 = [23,53,45,64,2,54];
+var numbers2 = numbers1.map(myFunction13);
+document.getElementById("demo34").innerHTML = numbers2;
+
+function myFunction13(value,index,array){
+    return value *2;
+}
+var numbers3 = [23,43,4,54,6,46];
+var numbers4 = numbers.map(myFunction13)
+document.getElementById("demo35").innerHTML = numbers4;
+function myFunction13(value){
+    return value *2
+}
+
+var numbers5 = [234,54,35,646,];
+
+var over50 = numbers5.filter(myFunction14)
+document.getElementById("demo36").innerHTML = over50;
+function myFunction14(value,index,array){
+    return value >50
+}
+var numbers6 = [324,545,6,64,6,64];
+var over30 = numbers6.filter(myFunction15)
+document.getElementById("demo37").innerHTML = over30;
+function myFunction15(value){
+    return value>30;
+}
+var numbers7 = [32,35,3,64,64];
+var sum= numbers7.reduce(myFunction16);
+document.getElementById("demo38").innerHTML ="the sum is"+sum;
+function myFunction16(total,value,index,array){
+    return total + value;
+}
+var numbers8 = [324,35,3,64,45];
+var sum1 = numbers8.reduce(myFunction17);
+document.getElementById("demo39").innerHTML = "the sum is" + sum;
+function myFunction17(total, value){
+    return total + value;
+}
+var numbers9 = [23,53,54,6,46];
+var sum2 = numbers9.reduceRight(myFunction18);
+document.getElementById("demo40").innerHTML = "the sum is" +sum;
+function myFunction18(total, value){
+    return total + value;
+}
+var numbers10 = [234,53,35,423,64,43];
+var first = numbers10.find(myFunction19);
+document.getElementById("demo41").innerHTML ="first number over 18 is"+first;
+function myFunction19(value,index,array){
+    return value>18
+}
