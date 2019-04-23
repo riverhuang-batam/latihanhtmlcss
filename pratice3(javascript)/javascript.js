@@ -16,21 +16,21 @@ const students = [{
     grade: 50
 }]
 
-var person= students.filter(students =>students.grade >50)
+var person= students.filter(student => student.grade >50)
 
 console.log(person)//filter
 
-var person1= students.map(students=> students +"gender:male")
+var person1= students.map(student => {
+
+    student.gender = 'male';
+    return student
+})
 console.log(person1)//map
 
-// var person3 = "";
-// students.forEach(element => {
-//     person3 = person3 + element + students.grade ;
-    
-// });
-// console.log(person3)
-
-
+students.forEach(student => {
+    const message = `hi i'm ${student.name}, i'm in ${student.grade} grade` ;
+    console.log(message)    
+});
 function myFunction(){
     students.sort(function(a,b){return b.grade-a.grade})
 } //sort highest
@@ -42,13 +42,12 @@ function myFunction1(){
 
 console.log(students.sort(myFunction1));//sort name
 
-function myFunction2(){
-    students.push({name:"julie", grade:70, gender:"female"})
-}
-console.log(students.push(myFunction2))
+students.push({name:"julie", grade:70, gender:"female"})
+console.log(students)
 
 
-//     function myFunction3(){
-//         students.pop(students=> students.grade<60)
-//     }
-// console.log(students.pop(myFunction3))
+    function myFunction3(items){
+        const result = items.filter(item => item.grade<60) 
+        return result;
+    }
+console.log(myFunction3(students))
